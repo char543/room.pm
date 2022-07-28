@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import React from 'react';
 
 function App() {
 
@@ -53,7 +54,7 @@ function App() {
 
   return (
     <div className="App h-screen bg-white justify-around items-center flex flex-col">
-      <img className='p-12' src='room.jpg'></img>
+      <img className='p-12' alt='room' src='room.jpg'></img>
       {/* <div className="z-10 flex justify-center items-center flex-col text-black">
           <span className="footer-title">Newsletter</span>
           <div className="form-control w-[280px] md:w-80">
@@ -74,7 +75,7 @@ function App() {
             </form>
           </div>
         </div> */}
-        <span className='hidden' data-sumome-listbuilder-embed-id="68c78aa33c2db037ade6454325cf5c658ee41a301485a360b828f79bca5d8e8a"></span>
+<span data-sumome-listbuilder-embed-id="68c78aa33c2db037ade6454325cf5c658ee41a301485a360b828f79bca5d8e8a"></span>
     </div>
   );
 }

@@ -52,7 +52,11 @@ function App() {
 	return (
 		<div className="App h-screen bg-white justify-around items-center flex flex-col">
 			<div className="flex max-w-[80vw] max-h-[80vh]">
-				<img className="p-12" src="room.jpg" alt="room"></img>
+				<img
+					className="p-12 max-h-[80vh]"
+					src="room.jpg"
+					alt="room"
+				></img>
 			</div>
 			{/* <div className="z-10 flex justify-center items-center flex-col text-black">
           <span className="footer-title">Newsletter</span>

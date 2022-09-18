@@ -1,59 +1,60 @@
-import './App.css';
+import "./App.css";
 
 function App() {
+	//setup useState for mailer
 
-//setup useState for mailer
+	// const [mailerState, setMailerState] = useState({
+	//   email: "",
+	//   name: "",
+	//   message: "",
+	// });
 
-// const [mailerState, setMailerState] = useState({
-//   email: "",
-//   name: "",
-//   message: "",
-// });
+	//function to handle the state
 
-//function to handle the state
+	// function handleStateChange(e) {
+	//   setMailerState((prevState) => ({
+	//     ...prevState,
+	//     [e.target.name]: e.target.value,
+	//   }));
+	// }
 
-// function handleStateChange(e) {
-//   setMailerState((prevState) => ({
-//     ...prevState,
-//     [e.target.name]: e.target.value,
-//   }));
-// }
+	//function to post to the route
 
-//function to post to the route
+	// const submitEmail = async (e) => {
+	// e.preventDefault();
+	// console.log({ mailerState });
+	// const response = await fetch("http://localhost:3001/send", {
+	//   method: "POST",
+	//   headers: {
+	//     "Content-type": "application/json",
+	//   },
+	//   body: JSON.stringify({ mailerState }),
+	// })
+	//   .then((res) => res.json())
+	//   .then(async (res) => {
+	//     const resData = await res;
+	//     console.log(resData);
+	//     if (resData.status === "success") {
+	//       alert("Message Sent");
+	//     } else if (resData.status === "fail") {
+	//       alert("Message failed to send");
+	//     }
+	//   })
+	//   .then(() => {
+	//     setMailerState({
+	//       email: "",
+	//       name: "",
+	//       message: "",
+	//     });
+	//   });
+	// };
 
-// const submitEmail = async (e) => {
-// e.preventDefault();
-// console.log({ mailerState });
-// const response = await fetch("http://localhost:3001/send", {
-//   method: "POST",
-//   headers: {
-//     "Content-type": "application/json",
-//   },
-//   body: JSON.stringify({ mailerState }),
-// })
-//   .then((res) => res.json())
-//   .then(async (res) => {
-//     const resData = await res;
-//     console.log(resData);
-//     if (resData.status === "success") {
-//       alert("Message Sent");
-//     } else if (resData.status === "fail") {
-//       alert("Message failed to send");
-//     }
-//   })
-//   .then(() => {
-//     setMailerState({
-//       email: "",
-//       name: "",
-//       message: "",
-//     });
-//   });
-// };
-
-  return (
-    <div className="App h-screen bg-white justify-around items-center flex flex-col">
-      <img className='p-12' alt='room' src='room.jpg'></img>
-      {/* <div className="z-10 flex justify-center items-center flex-col text-black">
+	return (
+		<div className="App h-screen bg-white justify-around items-center flex flex-col">
+			<div className="flex max-w-[80vw]">
+				<img className="p-12" src="room.jpg" alt="room"></img>
+			</div>
+			{/* <div className="z-10 flex justify-center items-center flex-col text-black">
           <span className="footer-title">Newsletter</span>
           <div className="form-control w-[280px] md:w-80">
             <label className="label">
@@ -73,9 +74,12 @@ function App() {
             </form>
           </div>
         </div> */}
-<span data-sumome-listbuilder-embed-id="386f0bb7e24496d78314c6cff82c1f55cdc8b168df20e5ab5bb2685b24c3692c"></span>
-    </div>
-  );
+			<span
+				className="hidden"
+				data-sumome-listbuilder-embed-id="386f0bb7e24496d78314c6cff82c1f55cdc8b168df20e5ab5bb2685b24c3692c"
+			></span>
+		</div>
+	);
 }
 
 export default App;
